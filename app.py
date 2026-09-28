@@ -21,6 +21,26 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown("""
 <style>
+/* 页面底色 */
+.stApp {
+    background-color: #FAFAFA !important;
+}
+/* 侧边栏底色 */
+[data-testid="stSidebar"] {
+    background-color: #F0F0F5 !important;
+}
+/* 标题颜色 */
+h1, h2, h3 {
+    color: #2D3436 !important;
+}
+/* KPI 数值颜色 */
+[data-testid="stMetricValue"] {
+    color: #6C5CE7 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
