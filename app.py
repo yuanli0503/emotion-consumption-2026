@@ -5,6 +5,21 @@ from data import budget, living, reason, category, priority
 
 st.set_page_config(page_title="大学生情绪价值消费洞察", layout="wide")
 
+st.markdown("""
+<style>
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+[data-testid="stMetric"], .stPlotlyChart, h1, h2, h3 {
+    animation: fadeInUp 0.8s ease-out;
+}
+[data-testid="stMetric"]:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+</style>
+""", unsafe_allow_html=True)
 st.title("🎓 大学生情绪价值消费洞察")
 st.caption("数据来源：问卷调查 | 多选题已标注")
 
