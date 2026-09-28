@@ -41,6 +41,22 @@ h1, h2, h3 {
 """, unsafe_allow_html=True)
 st.markdown("""
 <style>
+/* 强制修改页面主背景色 */
+.stApp {
+    background-color: #FAFAFA !important;
+}
+/* 强制修改侧边栏背景色 */
+[data-testid="stSidebar"] > div:first-child {
+    background-color: #F0F0F5 !important;
+}
+/* 强制修改标题颜色 */
+h1, h2, h3 {
+    color: #2D3436 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
